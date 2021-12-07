@@ -1,8 +1,6 @@
 # Author Information
 **Siri Chandana Kathroju**
 
-**CIS 4150 - A3: Mocking**
-
 **12/3/2021**
 
 # A3 Starter Code
@@ -191,13 +189,13 @@ getLetterForNumericGrade(percentageGrade)
 
 addNumericGrade(self, term, percentageGrade)
 --> student.addNumericGrade("Fall 2021", 100)
--->	mock_getLetter.assert_called_with(100)
+--> mock_getLetter.assert_called_with(100)
 
 --> student.addNumericGrade("Fall 2021", 95)
--->	mock_getLetter.assert_called_with(95)
+--> mock_getLetter.assert_called_with(95)
 
 --> student.addNumericGrade("Fall 2021", 90)
--->	mock_getLetter.assert_called_with(90)
+--> mock_getLetter.assert_called_with(90)
 
 mock_getLetter.assert_called()
 
@@ -293,13 +291,13 @@ getTermGPA(self, termName)
 
 --> addLetterGrade("Fall 2021", "A+")
 --> addLetterGrade("Winter 2022", "B+")
-
 --> removeInfoForTerm("Fall 2021")
-
 --> gpa = student.getTermGPA("Fall 2021")
+
 This will result a negative infinity because the term does not exist anymore.
 
 --> gpaTerm22 = student.getTermGPA("Winter 2022")
+
 This will return a GPA of 3.3 for a letter grade of B+
 
 **4. What expected values will be observed?**
